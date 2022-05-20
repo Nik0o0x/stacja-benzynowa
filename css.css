@@ -1,0 +1,27 @@
+.tytul { 
+        text-align: center;
+        background-color: rebeccapurple ;
+        text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87,  0 0 0.2em #F87;
+}
+.logo {
+    margin:0 auto;
+    display:block;
+}
+.tlo {
+    background-size: cover;
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/016/267/948/original/bogdan-mb0sco-gas-station-animate-800.gif?1551534923);
+}
+.srodek {
+    box-shadow: 0 0 0.9em #F87, 0 0 0.9em #F87,  0 0 0.9em #F87;
+    text-align: center;
+    border:10px groove rgb(111, 0, 255); 
+    margin: auto;
+    width: 300px;
+    margin-top: 20px; 
+    color:rgb(111, 0, 255);
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87,  0 0 0.2em #F87;
+}
+.yt{
+    border:10px groove #F87;
+    box-shadow: 0 0 0.8em rgb(111, 0, 255), 0 0 0.8em rgb(111, 0, 255),  0 0 0.8em rgb(111, 0, 255);
+}

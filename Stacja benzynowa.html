@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Stacja benzynowa</title>
+</head>
+<body class="tlo">
+    <h1 class="tytul"> Stacja benzynowa Nikko's</h1>
+    <img class="logo" src="11.png">
+    <div class="srodek">
+    <h2>Oblicz koszt paliwa</h2>
+    <p>Rodzaje paliw:<p>
+        
+        <input type="radio" id="ropa" name="paliwo" value=0 > 
+        <label for="ropa">Ropa</label>
+
+        <input type="radio" id="benzyna" name="paliwo" value=0 checked> 
+        <label for="benzyna">Benzyna</label>
+
+        <p><label for="numer">Ilość litrów:</p></label>
+        <input type="number" name="" id="numer">
+        <button class="guzik" onclick="oblicz()" 
+             >Oblicz</button>
+        <p id="obliczenie"></p>
+    </div>
+
+    <iframe class="yt" width="550" height="340" src="https://www.youtube.com/embed/cDl7tAzrzns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <script>
+            function oblicz()
+            {
+                var abc = document.getElementById('numer').value;
+                abc = parseInt(abc);
+                let G = document.getElementById('benzyna').checked;
+                let D = document.getElementById('ropa').checked;
+                var ilosc = document.getElementById('numer').value;
+                ilosc = parseInt(ilosc);
+                var koszt;
+
+
+                if (G == true){
+                    let abc = ilosc * 6.7;
+                    document.getElementById('obliczenie').innerHTML =
+                        "koszt" + abc + "zł" 
+                }
+                else if (D == true){
+                    let abc = ilosc * 7.5;
+                    document.getElementById('obliczenie').innerHTML = 
+                        "koszt" + abc + "zł" 
+                }
+            }
+
+        </script>
+</body>
+</html>
